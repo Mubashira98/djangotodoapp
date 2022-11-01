@@ -15,3 +15,7 @@ def mainpage(request):
             return redirect('mainpage')
 
     return render(request,'mainpage.html',{'form':form,'todos':todos})
+
+def viewtitle(request):
+    data = Todo.objects.all()
+    return render(request,'view.html',{'data':data})

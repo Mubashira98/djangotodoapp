@@ -11,7 +11,12 @@
         {% csrf_token %}
         {{form}}
         <input type="submit" class="btn btn-dark btn-block" value="Submit"/>
+
+
     </form>
+    <button type="button" href="{% url 'viewtitle' %}" class="btn btn-link" >view</button>
 </div>
+
+
 </body>
 </html>

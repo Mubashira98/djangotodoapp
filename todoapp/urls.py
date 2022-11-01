@@ -5,4 +5,5 @@ from todoapp import views
 
 urlpatterns = [
     path('',views.mainpage,name='mainpage'),
+    path('viewtitle',views.viewtitle,name='viewtitle')
     ]
